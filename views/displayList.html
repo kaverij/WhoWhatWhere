@@ -1,0 +1,27 @@
+<div class="home-page">
+    <div id="header">
+        <div class="row">
+            <div class="col-6">
+                <!--display Logo-->
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a ui-sref="home" title="back to home"><p>Who What Where</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--search location box-->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 top-mar">
+                <div class="form-inline pull-xs-right">
+                    <input class="form-control" id="search-box" type="text" ng-model="search"
+                           placeholder="I am looking for....">
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+</div>
+<!--display List-->
+<div ng-include="'views/businessList.html'"></div>

@@ -1,0 +1,21 @@
+<!--display list-->
+<div class="row">
+    <div class="clo-md-8">
+        <div class="list-container">
+            <div class="list-display" ng-repeat="list in businessInfo" class="item-detail">
+                <div class="pull-right">
+                    <a target="_blank" href="{{list.url}}"><img class="list-image" ng-src="{{list.image}}"/></a>
+                </div>
+                <div class="list-name">{{$index + 1}}. <a target="_blank" href="{{list.url}}">{{list.name}}</a>
+                </div>
+                <div class="list-address" ng-repeat="location in list.address track by $index">{{location}}</div>
+                <div class="list-rating-image">{{list.rating}}</div>
+            </div>
+        </div>
+    </div>
+
+    <!--display google map-->
+    <div class="clo-md-4">
+        <div id="map"></div>
+    </div>
+</div>
